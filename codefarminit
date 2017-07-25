@@ -1,0 +1,14 @@
+#!/bin/sh
+
+function deps(){
+  
+  cd /app2 ;
+  bundle install --jobs 20 --retry 5
+}
+
+function run(){
+  
+  cd /app2 ;
+  bundle exec rails s;
+
+}
